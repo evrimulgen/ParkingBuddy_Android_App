@@ -199,7 +199,7 @@ public class Login extends FragmentActivity implements
             }
         }
 
-        // The options specified in the Intent (from ParseLoginBuilder) will
+        // The options specified in the Intent (from LoginBuilder) will
         // override any duplicate options specified in the activity metadata
         Bundle mergedOptions = new Bundle();
         if (activityInfo != null && activityInfo.metaData != null) {

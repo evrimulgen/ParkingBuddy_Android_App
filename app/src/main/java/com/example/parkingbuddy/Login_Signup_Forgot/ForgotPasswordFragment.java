@@ -71,14 +71,14 @@ public class ForgotPasswordFragment extends LoginFragmentBase
             onLoadingListener = (OnLoadingListener) activity;
         } else {
             throw new IllegalArgumentException(
-                    "Activity must implemement ParseOnLoadingListener");
+                    "Activity must implemement OnLoadingListener");
         }
 
         if (activity instanceof ForgotPasswordSuccessListener) {
             onForgotPasswordSuccessListener = (ForgotPasswordSuccessListener) activity;
         } else {
             throw new IllegalArgumentException(
-                    "Activity must implemement ParseOnLoginHelpSuccessListener");
+                    "Activity must implemement OnLoginHelpSuccessListener");
         }
     }
 
