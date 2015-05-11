@@ -4,17 +4,14 @@ import android.annotation.TargetApi;
 import android.os.Build;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
-import android.util.Log;
 import android.widget.Toast;
-
-import com.parse.Parse;
 
 /**
  * Created by madhavchhura on 5/10/15.
  */
 
 /**
- * Base class with helper methods for fragments in ParseLoginUI.
+ * Base class with helper methods for fragments in Login UI.
  */
 public class LoginFragmentBase extends Fragment {
     protected OnLoadingListener onLoadingListener;
@@ -52,10 +49,7 @@ public class LoginFragmentBase extends Fragment {
     }
 
     protected void debugLog(String text) {
-        if (Parse.getLogLevel() <= Parse.LOG_LEVEL_DEBUG &&
-                Log.isLoggable(getLogTag(), Log.WARN)) {
-            Log.w(getLogTag(), text);
-        }
+
     }
 
     @TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR1)
