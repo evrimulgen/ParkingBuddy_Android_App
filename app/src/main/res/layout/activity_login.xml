@@ -1,0 +1,91 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/login"
+    style="@style/MyMaterialTheme"
+    android:background="@color/colorPrimary"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="183dp"
+            android:layout_height="183dp"
+            android:src="@drawable/app_icn"
+            android:id="@+id/appIcon"
+            android:layout_gravity="center">
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/username_input_hint"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:padding="15dp"/>
+
+            <EditText
+                android:id="@+id/password"
+                android:hint="@string/passwordHint"
+                android:imeActionId="@+id/login"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_vertical_spacing"
+                android:fontFamily="sans-serif"
+                android:selectAllOnFocus="true"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/large_vertical_spacing">
+
+            <com.gc.materialdesign.views.ButtonRectangle
+                android:id="@+id/btn_login"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="0.5"
+                android:background="#1E88E5"
+                android:text="@string/signIn"/>
+
+            <com.gc.materialdesign.views.ButtonRectangle
+                android:id="@+id/btn_signup"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="0.5"
+                android:background="#1E88E5"
+                android:layout_marginLeft="@dimen/small_horizontal_spacing"
+                android:text="@string/createAccount"/>
+        </LinearLayout>
+
+
+        <com.gc.materialdesign.views.ButtonFlat
+            android:id="@+id/btn_ForgetPass"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/small_vertical_spacing"
+            android:layout_marginBottom="@dimen/small_vertical_spacing"
+            android:layout_gravity="center"
+            android:text="@string/forgot_password"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
