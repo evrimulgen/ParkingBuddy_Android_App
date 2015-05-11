@@ -16,19 +16,18 @@ import java.util.Set;
  * Configurations for the LoginActivity.
  */
 public class LoginConfig {
-    public static final String APP_LOGO = "com.example.parkinbuddy.Login.LOGIN_BUTTON_TEXT";
-    public static final String LOGIN_ENABLED = "true";
-    public static final String LOGIN_BUTTON_TEXT = "com.example.parkinbuddy.Login.LOGIN_BUTTON_TEXT";
-    public static final String SIGNUP_BUTTON_TEXT = "com..ui.LoginActivity.SIGNUP_BUTTON_TEXT";
-    public static final String LOGIN_HELP_TEXT = "com..ui.LoginActivity.LOGIN_HELP_TEXT";
-    public static final String LOGIN_INVALID_CREDENTIALS_TOAST_TEXT = "com..ui.LoginActivity.LOGIN_INVALID_CREDENTIALS_TEXT";
-    public static final String LOGIN_EMAIL_AS_USERNAME = "com..ui.LoginActivity.LOGIN_EMAIL_AS_USERNAME";
-    public static final String SIGNUP_MIN_PASSWORD_LENGTH = "com..ui.LoginActivity.SIGNUP_MIN_PASSWORD_LENGTH";
-    public static final String SIGNUP_SUBMIT_BUTTON_TEXT = "com..ui.LoginActivity.SIGNUP_SUBMIT_BUTTON_TEXT";
-    // For internally serializing to/from string array (the public analog above is for resource from activity meta-data).
-    private static final String FACEBOOK_LOGIN_PERMISSIONS_STRING_ARRAY = "com..ui.LoginActivity.FACEBOOK_LOGIN_PERMISSIONS_STRING_ARRAY";
 
-    private static final String LOG_TAG = "com..ui.LoginConfig";
+    public static final String LOGIN_ENABLED = "true";
+    public static final String LOGIN_BUTTON_TEXT = "Log in";
+    public static final String SIGNUP_BUTTON_TEXT = "Sign up";
+    public static final String LOGIN_HELP_TEXT = "Forgot Password";
+    public static final String LOGIN_INVALID_CREDENTIALS_TOAST_TEXT = "";
+    public static final String LOGIN_EMAIL_AS_USERNAME = "";
+    public static final String SIGNUP_MIN_PASSWORD_LENGTH = "6";
+    public static final String SIGNUP_SUBMIT_BUTTON_TEXT = "Create Account";
+
+
+    private static final String LOG_TAG = "com.example.LoginConfig";
 
     // Use boxed types so that we can differentiate between a setting not set,
     // versus its default value.  This is useful for merging options set from code
@@ -137,9 +136,6 @@ public class LoginConfig {
     public Bundle toBundle() {
         Bundle bundle = new Bundle();
 
-        if (appLogo != null) {
-            bundle.putInt(APP_LOGO, appLogo);
-        }
 
         if (loginEnabled != null) {
             bundle.putBoolean(LOGIN_ENABLED, loginEnabled);
@@ -189,9 +185,6 @@ public class LoginConfig {
         LoginConfig config = new LoginConfig();
         Set<String> keys = bundle.keySet();
 
-        if (keys.contains(APP_LOGO)) {
-            config.setAppLogo(bundle.getInt(APP_LOGO));
-        }
 
         if (keys.contains(LOGIN_ENABLED)) {
             config.setLoginEnabled(bundle.getBoolean(LOGIN_ENABLED));
