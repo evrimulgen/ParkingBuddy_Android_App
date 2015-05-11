@@ -50,8 +50,6 @@
     <string name="no_password_toast">Please enter your password</string>
     <string name="parse_login_invalid_credentials_toast">The username and password you entered don\'t match</string>
     <string name="parse_login_failed_unknown_toast">Could not log in, please try again later</string>
-    <string name="facebook_login_failed_toast">Facebook login failed</string>
-    <string name="twitter_login_failed_toast">Twitter login failed</string>
 
     <plurals name="password_too_short_toast">
         <item quantity="one">Password must be at least %d character long</item>
@@ -74,8 +72,5 @@
     <string name="login_help_email_sent">Please check your email for instructions on how to access your account</string>
 
     <string name="forgot_password_instructions">Enter your email to recover your password</string>
-
-<!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
