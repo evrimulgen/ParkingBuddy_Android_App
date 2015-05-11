@@ -5,4 +5,77 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_splash">Splash</string>
     <string name="title_activity_login">Login</string>
+
+    <string name="title_activity_launcher">LauncherActivity</string>
+    <string name="title_activity_create_account">CreateAccountActivity</string>
+
+    <!-- Login/Account creation screen -->
+    <string name="signIn">Log in</string>
+    <string name="createAccount">Sign up</string>
+    <string name="forgot_password"><u>Forgot Password</u></string>
+
+    <string name="emailHint">Email</string>
+    <string name="passwordHint">Password</string>
+    <string name="confirmPasswordHint">Re-enter Password</string>
+    <string name="changing_fragments">Changing Fragments</string>
+    <string name="nameHint">Name</string>
+
+    <!-- Strings related to login -->
+
+    <string name="menu_forgot_password">Recover lost password</string>
+    <string name="login_progress_signing_in">Signing in&#8230;</string>
+    <string name="login_progress_password_email">Sending email&#8230;</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_duplicate_email">This email address is already in use</string>
+    <string name="error_duplicate_username">This username is already in use</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_invalid_confirm_password">Passwords do not match</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="title_activity_signup_fragment">SignupFragment</string>
+
+
+    <string name="logo_content_description">Logo</string>
+    <string name="progress_dialog_text">Loading...</string>
+    <string name="username_input_hint">Username</string>
+    <string name="password_input_hint">Password</string>
+    <string name="forgot_password_button_label"><u>Forgot password</u></string>
+    <string name="parse_login_button_label">Log in</string>
+    <string name="parse_signup_button_label">Sign up</string>
+    <string name="email_input_hint">Email</string>
+    <string name="confirm_password_input_hint">Re-enter password</string>
+    <string name="name_input_hint">Name</string>
+    <string name="create_account_button_label">Create account</string>
+    <string name="no_username_toast">Please enter your username</string>
+    <string name="no_password_toast">Please enter your password</string>
+    <string name="parse_login_invalid_credentials_toast">The username and password you entered don\'t match</string>
+    <string name="parse_login_failed_unknown_toast">Could not log in, please try again later</string>
+    <string name="facebook_login_failed_toast">Facebook login failed</string>
+    <string name="twitter_login_failed_toast">Twitter login failed</string>
+
+    <plurals name="password_too_short_toast">
+        <item quantity="one">Password must be at least %d character long</item>
+        <item quantity="other">Password must be at least %d characters long</item>
+    </plurals>
+
+    <string name="username_taken_toast">Username is already taken, please choose a different one</string>
+    <string name="reenter_password_toast">Please re-enter your password</string>
+    <string name="mismatch_confirm_password_toast">Passwords don\'t match, please try again</string>
+    <string name="no_email_toast">Please enter your email</string>
+    <string name="invalid_email_toast">Email is invalid, please correct it and try again</string>
+    <string name="email_taken_toast">Email is already taken, please reset your password instead</string>
+    <string name="no_name_toast">Please enter your name</string>
+    <string name="signup_failed_unknown_toast">Could not sign up, please try again later</string>
+    <string name="login_help_instructions">Enter your email to recover your password</string>
+    <string name="login_help_email_input_hint">Email</string>
+    <string name="submit_button_label">Submit</string>
+    <string name="login_help_login_again_button_label">Back to Login</string>
+    <string name="login_help_submit_failed_unknown">Failed to request password reset, please try again</string>
+    <string name="login_help_email_sent">Please check your email for instructions on how to access your account</string>
+
+    <string name="forgot_password_instructions">Enter your email to recover your password</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
