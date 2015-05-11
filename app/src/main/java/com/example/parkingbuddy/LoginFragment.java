@@ -150,7 +150,7 @@ public class LoginFragment extends LoginFragmentBase {
                                 loadingFinish();
                                 if (e != null) {
                                     //debugLog(getString(R.string.login_warning_parse_login_failed) + e.toString());
-                                    if (e.getMessage() == Exception.OBJECT_NOT_FOUND) {
+                                    if (e.getCode() == ParseException.OBJECT_NOT_FOUND) {
                                         if (config.getLoginInvalidCredentialsToastText() != null) {
                                             showToast(config.getLoginInvalidCredentialsToastText());
                                         } else {
